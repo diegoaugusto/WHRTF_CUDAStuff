@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75D2DD6B0FFC1AE500BF55D3 /* libcudart.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D2DD680FFC1AE500BF55D3 /* libcudart.dylib */; };
+		75D2DD6C0FFC1AE500BF55D3 /* WHRTF.cu in Sources */ = {isa = PBXBuildFile; fileRef = 75D2DD690FFC1AE500BF55D3 /* WHRTF.cu */; };
+		8DD76F650486A84900D96B5E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.c */; settings = {ATTRIBUTES = (); }; };
+		8DD76F6A0486A84900D96B5E /* WHRTF.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6859E8B029090EE04C91782 /* WHRTF.1 */; };
+		F15CC33E13900E850001EE14 /* sparseCoefficients.c in Sources */ = {isa = PBXBuildFile; fileRef = F15CC33D13900E850001EE14 /* sparseCoefficients.c */; };
+		F186322B138BDBF600B82550 /* whrtf.c in Sources */ = {isa = PBXBuildFile; fileRef = F186322A138BDBF600B82550 /* whrtf.c */; };
+		F1863232138BDD3A00B82550 /* ReadHrtf.c in Sources */ = {isa = PBXBuildFile; fileRef = F1863231138BDD3A00B82550 /* ReadHrtf.c */; };
+		F1863237138BDDB300B82550 /* MathUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = F1863233138BDDB300B82550 /* MathUtil.c */; };
+		F1863238138BDDB300B82550 /* MsgUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = F1863235138BDDB300B82550 /* MsgUtil.c */; };
+		F18632AF138BEDBB00B82550 /* libcudart.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F18632AD138BEDBB00B82550 /* libcudart.dylib */; };
+		F18632B0138BEDBB00B82550 /* libcufft.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F18632AE138BEDBB00B82550 /* libcufft.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8DD76F690486A84900D96B5E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				8DD76F6A0486A84900D96B5E /* WHRTF.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08FB7796FE84155DC02AAC07 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		75D2DD680FFC1AE500BF55D3 /* libcudart.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcudart.dylib; sourceTree = "<group>"; };
+		75D2DD690FFC1AE500BF55D3 /* WHRTF.cu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cuda; path = WHRTF.cu; sourceTree = "<group>"; };
+		8DD76F6C0486A84900D96B5E /* WHRTF */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WHRTF; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6859E8B029090EE04C91782 /* WHRTF.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = WHRTF.1; sourceTree = "<group>"; };
+		F15CC33C13900E850001EE14 /* sparseCoefficients.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sparseCoefficients.h; sourceTree = "<group>"; };
+		F15CC33D13900E850001EE14 /* sparseCoefficients.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sparseCoefficients.c; sourceTree = "<group>"; };
+		F1863229138BDBF600B82550 /* whrtf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = whrtf.h; sourceTree = "<group>"; };
+		F186322A138BDBF600B82550 /* whrtf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = whrtf.c; sourceTree = "<group>"; };
+		F1863230138BDD3A00B82550 /* ReadHrtf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadHrtf.h; sourceTree = "<group>"; };
+		F1863231138BDD3A00B82550 /* ReadHrtf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ReadHrtf.c; sourceTree = "<group>"; };
+		F1863233138BDDB300B82550 /* MathUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MathUtil.c; sourceTree = "<group>"; };
+		F1863234138BDDB300B82550 /* MathUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathUtil.h; sourceTree = "<group>"; };
+		F1863235138BDDB300B82550 /* MsgUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MsgUtil.c; sourceTree = "<group>"; };
+		F1863236138BDDB300B82550 /* MsgUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MsgUtil.h; sourceTree = "<group>"; };
+		F1863255138BE23300B82550 /* whrtfConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = whrtfConstants.h; sourceTree = "<group>"; };
+		F18632AD138BEDBB00B82550 /* libcudart.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcudart.dylib; path = /usr/local/cuda/lib/libcudart.dylib; sourceTree = "<absolute>"; };
+		F18632AE138BEDBB00B82550 /* libcufft.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcufft.dylib; path = /usr/local/cuda/lib/libcufft.dylib; sourceTree = "<absolute>"; };
+		F1902D77138E77E300203D76 /* runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = runtime.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DD76F660486A84900D96B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75D2DD6B0FFC1AE500BF55D3 /* libcudart.dylib in Frameworks */,
+				F18632AF138BEDBB00B82550 /* libcudart.dylib in Frameworks */,
+				F18632B0138BEDBB00B82550 /* libcufft.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* WHRTF */ = {
+			isa = PBXGroup;
+			children = (
+				F18632AD138BEDBB00B82550 /* libcudart.dylib */,
+				F18632AE138BEDBB00B82550 /* libcufft.dylib */,
+				75D2DD680FFC1AE500BF55D3 /* libcudart.dylib */,
+				08FB7795FE84155DC02AAC07 /* Source */,
+				C6859E8C029090F304C91782 /* Documentation */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = WHRTF;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				F1902D77138E77E300203D76 /* runtime.h */,
+				F1863233138BDDB300B82550 /* MathUtil.c */,
+				F1863234138BDDB300B82550 /* MathUtil.h */,
+				F1863235138BDDB300B82550 /* MsgUtil.c */,
+				F1863236138BDDB300B82550 /* MsgUtil.h */,
+				75D2DD690FFC1AE500BF55D3 /* WHRTF.cu */,
+				08FB7796FE84155DC02AAC07 /* main.c */,
+				F1863229138BDBF600B82550 /* whrtf.h */,
+				F186322A138BDBF600B82550 /* whrtf.c */,
+				F1863230138BDD3A00B82550 /* ReadHrtf.h */,
+				F1863231138BDD3A00B82550 /* ReadHrtf.c */,
+				F1863255138BE23300B82550 /* whrtfConstants.h */,
+				F15CC33C13900E850001EE14 /* sparseCoefficients.h */,
+				F15CC33D13900E850001EE14 /* sparseCoefficients.c */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DD76F6C0486A84900D96B5E /* WHRTF */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6859E8C029090F304C91782 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				C6859E8B029090EE04C91782 /* WHRTF.1 */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DD76F620486A84900D96B5E /* WHRTF */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB923108733DC60010E9CD /* Build configuration list for PBXNativeTarget "WHRTF" */;
+			buildPhases = (
+				8DD76F640486A84900D96B5E /* Sources */,
+				8DD76F660486A84900D96B5E /* Frameworks */,
+				8DD76F690486A84900D96B5E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WHRTF;
+			productInstallPath = "$(HOME)/bin";
+			productName = WHRTF;
+			productReference = 8DD76F6C0486A84900D96B5E /* WHRTF */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "WHRTF_CUDAStuff" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* WHRTF */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DD76F620486A84900D96B5E /* WHRTF */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DD76F640486A84900D96B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DD76F650486A84900D96B5E /* main.c in Sources */,
+				75D2DD6C0FFC1AE500BF55D3 /* WHRTF.cu in Sources */,
+				F186322B138BDBF600B82550 /* whrtf.c in Sources */,
+				F1863232138BDD3A00B82550 /* ReadHrtf.c in Sources */,
+				F1863237138BDDB300B82550 /* MathUtil.c in Sources */,
+				F1863238138BDDB300B82550 /* MsgUtil.c in Sources */,
+				F15CC33E13900E850001EE14 /* sparseCoefficients.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB923208733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					/usr/local/cuda/lib,
+				);
+				PRODUCT_NAME = WHRTF;
+			};
+			name = Debug;
+		};
+		1DEB923308733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					/usr/local/cuda/lib,
+				);
+				PRODUCT_NAME = WHRTF;
+			};
+			name = Release;
+		};
+		1DEB923608733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CUDA_ARCH = "";
+				CUDA_CODE = "";
+				CUDA_DEVICE_EMULATION = NO;
+				CUDA_HOST_COMPILATION = c;
+				CUDA_USE_FASTMATH = YES;
+				ENABLE_OPENMP_SUPPORT = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_MODEL_TUNING = "";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = 4.2;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_EFFECTIVE_CPLUSPLUS_VIOLATIONS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"/Developer/GPU Computing/C/common/inc/cudpp\"",
+					"\"/Developer/GPU Computing/C/common/inc/GL\"",
+					"\"/Developer/GPU Computing/C/common/inc/dynlink\"",
+					"\"/Developer/GPU Computing/C/common/inc\"",
+				);
+				LD_RUNPATH_SEARCH_PATHS = /usr/local/cuda/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"\"/Developer/GPU Computing/C/common/lib\"",
+					"/usr/local/cuda/lib/**",
+				);
+				MACH_O_TYPE = mh_execute;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-pg",
+					"-g",
+				);
+				OTHER_LDFLAGS = (
+					"-lcudart",
+					"-lcuda",
+				);
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = static;
+				USER_HEADER_SEARCH_PATHS = "/usr/local/cuda/include/**";
+			};
+			name = Debug;
+		};
+		1DEB923708733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ADDITIONAL_SDKS = "";
+				ALTERNATE_GROUP = "$(INSTALL_GROUP)";
+				ALTERNATE_MODE = "$(INSTALL_MODE_FLAG)";
+				ALTERNATE_OWNER = "$(INSTALL_OWNER)";
+				ALTERNATE_PERMISSIONS_FILES = "";
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				APPLY_RULES_IN_COPY_FILES = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUILD_VARIANTS = normal;
+				BUNDLE_LOADER = "";
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_RESOURCE_RULES_PATH = "";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				COPYING_PRESERVES_HFS_DATA = NO;
+				COPY_PHASE_STRIP = YES;
+				CUDA_ARCH = "";
+				CUDA_CODE = "";
+				CUDA_DEVICE_EMULATION = NO;
+				CUDA_GENERATE_DEBUGGING_SYMBOLS = YES;
+				CUDA_HOST_COMPILATION = c;
+				CUDA_OPTIMIZATION_LEVEL = 2;
+				CUDA_PREPROCESSOR_DEFINITIONS = "";
+				CUDA_USE_FASTMATH = YES;
+				CURRENT_PROJECT_VERSION = "";
+				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = "";
+				DEPLOYMENT_LOCATION = NO;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				DSTROOT = "/tmp/$(PROJECT_NAME).dst";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				ENABLE_OPENMP_SUPPORT = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.framework *.gch *.xcode* (*) CVS .svn";
+				EXECUTABLE_EXTENSION = "";
+				EXECUTABLE_PREFIX = "";
+				EXPORTED_SYMBOLS_FILE = "";
+				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_VERSION = A;
+				GCC_ALTIVEC_EXTENSIONS = NO;
+				GCC_AUTO_VECTORIZATION = NO;
+				GCC_CHAR_IS_UNSIGNED_CHAR = NO;
+				GCC_CHECK_RETURN_VALUE_OF_OPERATOR_NEW = NO;
+				GCC_CW_ASM_SYNTAX = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DEBUGGING_SYMBOLS = default;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_ASM_KEYWORD = YES;
+				GCC_ENABLE_BUILTIN_FUNCTIONS = YES;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_FLOATING_POINT_LIBRARY_CALLS = NO;
+				GCC_ENABLE_KERNEL_DEVELOPMENT = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_ENABLE_PASCAL_STRINGS = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = NO;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = NO;
+				GCC_ENABLE_SYMBOL_SEPARATION = YES;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_FAST_MATH = NO;
+				GCC_FAST_OBJC_DISPATCH = YES;
+				GCC_FEEDBACK_DIRECTED_OPTIMIZATION = Off;
+				GCC_FORCE_CPU_SUBTYPE_ALL = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
+				GCC_LINK_WITH_DYNAMIC_LIBRARIES = YES;
+				GCC_MODEL_PPC64 = NO;
+				GCC_MODEL_TUNING = "";
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_OBJC_CALL_CXX_CDTORS = NO;
+				GCC_ONE_BYTE_BOOL = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PFE_FILE_C_DIALECTS = "c objective-c c++ objective-c++";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
+				GCC_REUSE_STRINGS = YES;
+				GCC_SHORT_ENUMS = NO;
+				GCC_STRICT_ALIASING = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THREADSAFE_STATICS = YES;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = NO;
+				GCC_TREAT_NONCONFORMANT_CODE_ERRORS_AS_WARNINGS = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_UNROLL_LOOPS = NO;
+				GCC_USE_GCC3_PFE_SUPPORT = YES;
+				GCC_USE_INDIRECT_FUNCTION_CALLS = NO;
+				GCC_USE_REGISTER_FUNCTION_CALLS = NO;
+				GCC_USE_STANDARD_INCLUDE_SEARCHING = YES;
+				GCC_VERSION = 4.2;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
+				GCC_WARN_EFFECTIVE_CPLUSPLUS_VIOLATIONS = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = NO;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = NO;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = NO;
+				GCC_WARN_PEDANTIC = NO;
+				GCC_WARN_PROTOTYPE_CONVERSION = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_SIGN_COMPARE = NO;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_LABEL = NO;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_MASTER_OBJECT_FILE = NO;
+				GENERATE_PKGINFO_FILE = NO;
+				GENERATE_PROFILING_CODE = "";
+				HEADER_SEARCH_PATHS = "";
+				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "";
+				INFOPLIST_EXPAND_BUILD_SETTINGS = YES;
+				INFOPLIST_FILE = "";
+				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "";
+				INFOPLIST_OUTPUT_FORMAT = "same-as-input";
+				INFOPLIST_PREFIX_HEADER = "";
+				INFOPLIST_PREPROCESS = NO;
+				INFOPLIST_PREPROCESSOR_DEFINITIONS = "";
+				INIT_ROUTINE = "";
+				INSTALL_GROUP = "$(GROUP)";
+				INSTALL_MODE_FLAG = "u+w,go-w,a+rX";
+				INSTALL_OWNER = "$(USER)";
+				INSTALL_PATH = "";
+				KEEP_PRIVATE_EXTERNS = NO;
+				LD_DYLIB_INSTALL_NAME = "";
+				LD_GENERATE_MAP_FILE = NO;
+				LD_MAP_FILE_PATH = "$(TARGET_TEMP_DIR)/$(PRODUCT_NAME)-LinkMap-$(CURRENT_VARIANT)-$(CURRENT_ARCH).txt";
+				LD_OPENMP_FLAGS = "-fopenmp";
+				LD_RUNPATH_SEARCH_PATHS = /usr/local/cuda/lib;
+				LIBRARY_SEARCH_PATHS = /usr/local/cuda/lib;
+				LINKER_DISPLAYS_MANGLED_NAMES = NO;
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_execute;
+				MODULE_NAME = "";
+				MODULE_START = "";
+				MODULE_STOP = "";
+				MODULE_VERSION = "";
+				OBJROOT = "$(SYMROOT)";
+				ONLY_ACTIVE_ARCH = YES;
+				ORDER_FILE = "";
+				OTHER_CODE_SIGN_FLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_LDFLAGS = (
+					"-s",
+					"-lcudart",
+					"-lcuda",
+				);
+				OTHER_TEST_FLAGS = "";
+				PLIST_FILE_OUTPUT_FORMAT = "same-as-input";
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
+				PRELINK_FLAGS = "";
+				PRELINK_LIBS = "";
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = NO;
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				REZ_SEARCH_PATHS = "";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
+				SDKROOT = macosx10.5;
+				SECTORDER_FLAGS = "";
+				SEPARATE_STRIP = NO;
+				SEPARATE_SYMBOL_EDIT = NO;
+				SHARED_PRECOMPS_DIR = "$(CACHE_ROOT)/SharedPrecompiledHeaders";
+				SKIP_INSTALL = NO;
+				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = static;
+				STRINGS_FILE_OUTPUT_ENCODING = "UTF-16";
+				STRIPFLAGS = "";
+				STRIP_INSTALLED_PRODUCT = YES;
+				STRIP_STYLE = all;
+				SYMROOT = build;
+				TEST_HOST = "";
+				TEST_RIG = "";
+				UNEXPORTED_SYMBOLS_FILE = "";
+				USER_HEADER_SEARCH_PATHS = "/Users/diego/Dev/CUDA/CUDAResources/common/inc/** /usr/local/cuda/include/**";
+				VALID_ARCHS = "i386 ppc ppc64 ppc7400 ppc970 x86_64";
+				VERSIONING_SYSTEM = "";
+				VERSION_INFO_BUILDER = "";
+				VERSION_INFO_EXPORT_DECL = "";
+				VERSION_INFO_FILE = "";
+				VERSION_INFO_PREFIX = "";
+				VERSION_INFO_SUFFIX = "";
+				WARNING_CFLAGS = "";
+				WARNING_LDFLAGS = "";
+				WRAPPER_EXTENSION = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB923108733DC60010E9CD /* Build configuration list for PBXNativeTarget "WHRTF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923208733DC60010E9CD /* Debug */,
+				1DEB923308733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "WHRTF_CUDAStuff" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923608733DC60010E9CD /* Debug */,
+				1DEB923708733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}
